@@ -62,8 +62,8 @@ gillespie <- function(init, times, intenfun, pproc, param){
 
 # Set parameters described above
 init <- c(25)
-times <- seq(0, 100, by = 2)
-pproc <- matrix(c(-1, 1, 1, 0, 0, -1), ncol = 2, nrow = 3)
+times <- seq(0, 50, by = 2)
+pproc <- matrix(c(1, -1), ncol = 1, nrow = 2)
 param <- c(.068, 200, 0.01)
 
 # Run one simulation

@@ -93,7 +93,7 @@ gillespie2 <- function(init, times, intenfun2, pproc, param){
 
 # Setting parameters described above
 init <- c(25)
-times <- seq(0, 30, by = 1)
+times <- seq(0, 50, by = 2)
 pproc <- matrix(c(1, -1), ncol = 1, nrow = 2)
 param <- c(200, 0.01)
 
