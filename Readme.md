@@ -11,3 +11,9 @@ This is the standard Gillespie algorithm, which assumes that demographic rates/i
 ## gillespie2.R
 
 This is a modified Gillespie algorithm, which allows demographic rates/intensities to change with time and which correctly samples the waiting time to the next event.
+
+# Errors?
+
+This is draft code so I apologize for any errors it may contain. Please let me know about any such cases and I will try to fix them as soon as possible.
+
+Email: geoffrey.legault@colorado.edu
