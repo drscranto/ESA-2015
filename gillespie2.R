@@ -17,10 +17,14 @@
 ## algorithm will run many times faster if implemented in Mathematica or
 ## a lower-level language such as C
 
+rand.r <- rnorm(t.end,mu.T,sd.T) ## KATIE - pull (or otherwise set) temperatures ahead of time
 intenfun2 <- function(X, param, t1, t2){
     k <- param[1]
     d <- param[2]                       # note the lack of a general birth term
     births <- function(t){              # enter our observed rates
+        # r <- rand.r[floor(t1)]
+        # births <- r*X*(1-X/k)
+        
         if(t < 16) 0
         if(t >= 16 || t < 17) {
             0.093 *  X * (1 - X / k)
